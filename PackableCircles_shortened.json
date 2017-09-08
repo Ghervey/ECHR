@@ -1,1 +1,955 @@
-
+{"name": "ECHR",
+"children": [
+{
+"name": "Albania",
+"children": [
+ {
+  "name": "Enhanced Procedure",
+  "children": [
+    {"name": "Effective remedy", "size": 1},
+    {"name": "Independence and impartiality in civil proceedings", "size": 6},
+    {"name": "Lack of access to a court", "size": 1},
+    {"name": "Length of civil proceedings", "size": 3},
+    {"name": "Non Execution", "size": 7},
+    {"name": "Peaceful enjoyment of possessions", "size": 7},
+    {"name": "Unfair criminal proceedings", "size": 3}					
+   ]
+  },
+  {
+   "name": "New Case",
+   "children": [
+   {"name": "Friendly settlement", "size": 1}
+   ]
+  },
+  {
+   "name": "Standard Procedure",
+   "children": [
+    {"name": "Family life", "size": 1},
+    {"name": "Friendly settlement", "size": 6},
+    {"name": "Lack of access to a court", "size": 1},
+    {"name": "Length of proceedings before the disciplinary courts", "size": 2},
+    {"name": "Non Execution", "size": 12},
+    {"name": "Right to liberty & security", "size": 1}
+   ]
+  },
+]
+},
+{
+"name": "Andorra",
+"children": [
+ {
+  "name": "Standard Procedure",
+	"children": [
+	{"name": "No punishment without law", "size": 1}
+   ]
+  },
+]
+  },
+{
+"name": "Armenia",
+"children": [
+ {
+  "name": "Enhanced Procedure",
+  "children": [
+    {"name": "Discrimination", "size": 1},
+    {"name": "Ill treatment/torture", "size": 1},
+    {"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+    {"name": "Lack of access to a court", "size": 1},
+    {"name": "Peaceful enjoyment of possessions", "size": 1},
+    {"name": "Right to life", "size": 1}
+   ]
+  },	
+  {
+  "name": "New Case", 
+   "children": [
+    {"name": "Non Execution", "size": 2},
+    {"name": "Unfair criminal proceedings", "size": 1},
+    {"name": "Unfair proceedings for the release from detention", "size": 2},
+   ]
+  },
+  {
+  "name": "Standard Procedure",
+   "children": [
+    {"name": "Arrest without judicial control", "size": 1},
+    {"name": "Effective remedy", "size": 1},
+    {"name": "Fairness of civil proceedings", "size": 1},
+    {"name": "Impartiality in civil proceedings", "size": 1},
+    {"name": "Lack of access to a court", "size": 1},
+    {"name": "No judicial review of lawfulness of detention", "size": 2},
+	{"name": "Non Execution", "size": 1},
+    {"name": "Right to liberty & security", "size": 2},
+    {"name": "Unfair criminal proceedings", "size": 4},
+    {"name": "Unfair proceedings for the release from detention", "size": 1},
+    {"name": "Unlawful deprivation of liberty", "size": 2}
+	   ]
+  }
+]
+},   
+{
+"name": "Austria",
+ "children": [
+ {
+ "name": "New Case",
+  "children": [
+   {"name": "Friendly settlement", "size": 2}
+ ]
+ },
+ {
+ "name": "Standard Procedure",
+  "children": [
+   {"name": "Access to information", "size": 1},
+   {"name": "Discrimination", "size": 3},
+   {"name": "Fairness of civil proceedings", "size": 1},
+   {"name": "Family life", "size": 1},
+   {"name": "Freedom of expression", "size": 3},
+   {"name": "Friendly settlement", "size": 1},
+   {"name": "Ill treatment/torture by police", "size": 1},
+   {"name": "Lack of public hearing", "size": 3},
+   {"name": "Length of civil proceedings", "size": 5},
+   {"name": "Length of criminal proceedings", "size": 2},
+   {"name": "Length of proceedings for the release from mental hospital", "size": 1},
+   {"name": "Peaceful enjoyment of possessions", "size": 1},
+   {"name": "Privacy", "size": 1}
+]
+ }
+]
+},
+{
+"name": "Azerbaijan",
+"children": [
+ {
+"name": "Enhanced Procedure",
+  "children": [
+  {"name": "Freedom of expression", "size": 4},
+  {"name": "Ill treatment/torture", "size": 7},
+  {"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+  {"name": "Impartiality in criminal proceedings", "size": 3},
+  {"name": "Lack of legal aid in criminal proceedings", "size": 1},
+  {"name": "Length of detention on remand", "size": 1},
+  {"name": "Non Execution", "size": 24},
+  {"name": "Peaceful enjoyment of possessions", "size": 1},
+  {"name": "Restrictions to rights and freedoms", "size": 2},
+  {"name": "Right to be assisted by a lawyer", "size": 15},
+  {"name": "Right to free elections", "size": 21},
+  {"name": "Right to liberty & security", "size": 1},
+  {"name": "Right to life", "size": 3},
+  {"name": "Unfair criminal proceedings", "size": 1}
+]
+},
+{
+"name": "New Case",
+"children": [
+  {"name": "Peaceful enjoyment of possessions", "size": 1},
+  {"name": "Right to be assisted by a lawyer", "size": 3},
+  {"name": "Right to free elections", "size": 2}
+]
+},
+{
+"name": "Standard Procedure",
+ "children": [
+   {"name": "Arrest without judicial control", "size": 3},
+   {"name": "Fairness of civil proceedings", "size": 1},
+   {"name": "Freedom of association", "size": 5},
+   {"name": "Friendly settlement", "size": 53},
+   {"name": "Ill treatment/torture", "size": 1},
+   {"name": "Ill treatment/torture on account of the conditions of expulsion or extradition", "size": 1},
+   {"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+   {"name": "Impartiality in criminal proceedings", "size": 1},
+   {"name": "Lack of access to a court", "size": 5},
+   {"name": "Length of civil proceedings", "size": 1},
+   {"name": "Length of criminal proceedings", "size": 2},
+   {"name": "Length of detention on remand", "size": 1},
+   {"name": "No judicial review of lawfulness of detention", "size": 5},
+   {"name": "Non Execution", "size": 1},
+   {"name": "Peaceful enjoyment of possessions", "size": 1},
+   {"name": "Right to defend oneself", "size": 1},
+   {"name": "Right to liberty & security", "size": 1},
+   {"name": "Unfair criminal proceedings", "size": 5},
+   {"name": "Unlawful deprivation of liberty", "size": 4}
+	]
+ }
+]
+},
+{
+"name": "Belgium",
+"children": [
+  {"name": "Enhanced Procedure",
+  "children": [
+{"name": "Ill treatment/torture on account of the conditions of expulsion or extradition", "size": 1},
+   {"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+   {"name": "Length of civil proceedings", "size": 7},
+   {"name": "No judicial review of lawfulness of detention", "size": 10},
+   {"name": "Unlawful deprivation of liberty", "size": 5}
+	]
+  },
+{
+"name": "New Case",
+	"children": [
+{"name": "Length of criminal proceedings", "size": 1},
+{"name": "Privacy and home", "size": 1}
+		]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Family life", "size": 1},
+{"name": "Freedom of expression", "size": 1},
+{"name": "Friendly settlement", "size": 5},
+{"name": "Ill treatment/torture on account of the conditions of expulsion or extradition", "size": 2},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Unfair criminal proceedings", "size": 9},
+{"name": "Unlawful deprivation of liberty", "size": 1}
+	]
+ }
+]
+},
+{
+"name": "Bosnia and Herzegovina",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Discrimination", "size": 4},
+{"name": "Peaceful enjoyment of possessions", "size": 2}
+]
+},
+{
+"name": "New Case",
+	"children": [
+{"name": "Friendly settlement", "size": 1}
+]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Friendly settlement", "size": 6},
+{"name": "Length of civil proceedings", "size": 3},
+{"name": "Non Execution", "size": 6},
+{"name": "Unlawful deprivation of liberty", "size": 2}
+	]
+ }
+]
+},
+{
+"name": "Bulgaria",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Arrest without judicial control", "size": 1},
+{"name": "Effective remedy", "size": 8},
+{"name": "Fairness of civil proceedings", "size": 1},
+{"name": "Family life", "size": 1},
+{"name": "Freedom of association", "size": 2},
+{"name": "Ill treatment/torture", "size": 24},
+{"name": "Ill treatment/torture by police", "size": 8},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 10},
+{"name": "Lack of access to a court", "size": 2},
+{"name": "Length of arrest without judicial control", "size": 8},
+{"name": "Length of civil proceedings", "size": 17},
+{"name": "Length of criminal proceedings", "size": 14},
+{"name": "Length of detention on remand", "size": 3},
+{"name": "Length of proceedings for the release from detention on remand", "size": 2},
+{"name": "No judicial review of lawfulness of detention", "size": 4},
+{"name": "Privacy and home", "size": 2},
+{"name": "Privacy and secret services", "size": 1},
+{"name": "Procedural safeguards relating to expulsion of aliens", "size": 3},
+{"name": "Right to free elections", "size": 1},
+{"name": "Right to life", "size": 5},
+{"name": "Unlawful deprivation of liberty", "size": 3}
+	 ]
+  },
+{"name": "New Case",
+ "children": [
+{"name": "Family life", "size": 4},
+{"name": "Freedom of religion", "size": 1},
+{"name": "Friendly settlement", "size": 2},
+{"name": "Ill treatment/torture", "size": 1},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "No judicial review of lawfulness of detention", "size": 3},
+{"name": "Non Execution", "size": 1}
+	 ]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Discrimination", "size": 1},
+{"name": "Effective remedy", "size": 1},
+{"name": "Fairness of civil proceedings", "size": 4},
+{"name": "Family life", "size": 3},
+{"name": "Freedom of association", "size": 1},
+{"name": "Freedom of expression", "size": 8},
+{"name": "Freedom of religion", "size": 2},
+{"name": "Friendly settlement", "size": 3},
+{"name": "Ill treatment/torture", "size": 8},
+{"name": "Ill treatment/torture by police", "size": 1},
+{"name": "Ill treatment/torture on account of the conditions of expulsion or extradition", "size": 1},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Judgment not rended public", "size": 1},
+{"name": "Lack of access to a court", "size": 7},
+{"name": "Lack of legal aid in criminal proceedings", "size": 1},
+{"name": "Length of arrest without judicial control", "size": 1},
+{"name": "Length of civil proceedings", "size": 3},
+{"name": "Length of detention on remand", "size": 3},
+{"name": "No compensation for unlawful detention", "size": 3},
+{"name": "No judicial review of lawfulness of detention", "size": 11},
+{"name": "Non Execution", "size": 6},
+{"name": "Peaceful enjoyment of possessions", "size": 33},
+{"name": "Presumption of innocence", "size": 1},
+{"name": "Privacy", "size": 2},
+{"name": "Privacy and family life", "size": 1},
+{"name": "Right to education", "size": 1},
+{"name": "Right to free elections", "size": 3},
+{"name": "Right to life", "size": 7},
+{"name": "Unfair criminal proceedings", "size": 2},
+{"name": "Unlawful deprivation of liberty", "size": 2},
+{"name": "Violation of property rights resulting from non-execution of judgments", "size": 7}
+]
+ }
+]
+},
+{
+"name": "Croatia",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Discrimination", "size": 1},
+{"name": "Peaceful enjoyment of possessions", "size": 4},
+{"name": "Right to life", "size": 4}
+	 ]
+  },
+{"name": "New Case", "children": [
+{"name": "Discrimination", "size": 1},
+{"name": "Friendly settlement", "size": 3},
+{"name": "Peaceful enjoyment of possessions", "size": 1},
+{"name": "Unfair criminal proceedings", "size": 1}
+	]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Discrimination", "size": 4},
+{"name": "Fairness of civil proceedings", "size": 3},
+{"name": "Family life", "size": 8},
+{"name": "Freedom of expression", "size": 1},
+{"name": "Ill treatment/torture", "size": 14},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Lack of access to a court", "size": 14},
+{"name": "Length of civil proceedings", "size": 45},
+{"name": "Length of criminal proceedings", "size": 2},
+{"name": "Length of detention on remand", "size": 2},
+{"name": "No judicial review of lawfulness of detention", "size": 6},
+{"name": "No punishment without law", "size": 1},
+{"name": "Non Execution", "size": 15},
+{"name": "Peaceful enjoyment of possessions", "size": 6},
+{"name": "Privacy", "size": 6},
+{"name": "Privacy and family life", "size": 1},
+{"name": "Privacy and home", "size": 7},
+{"name": "Right no to be tried or punished twice", "size": 1},
+{"name": "Right to be assisted by a lawyer", "size": 3},
+{"name": "Right to defend oneself", "size": 3},
+{"name": "Right to have adequate time and facilities for the preparation of one's defence", "size": 1},
+{"name": "Right to life", "size": 6},
+{"name": "Right to marry", "size": 1},
+{"name": "Unfair administrative proceedings", "size": 2},
+{"name": "Unfair criminal proceedings", "size": 6},
+{"name": "Unfair proceedings for the release from detention", "size": 3},
+{"name": "Unlawful deprivation of liberty", "size": 2}
+]
+ }
+]
+},
+{
+"name": "Cyprus",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "No judicial review of lawfulness of detention", "size": 5}
+	 ]
+  },
+{"name": "Standard Procedure", "children": [
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Unlawful deprivation of liberty", "size": 1}
+]
+ }
+]
+},
+{
+"name": "Czech Republic",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Discrimination", "size": 1}
+	 ]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Effective remedy", "size": 1},
+{"name": "Fairness of civil proceedings", "size": 1},
+{"name": "Friendly settlement", "size": 4},
+{"name": "Ill treatment/torture", "size": 1},
+{"name": "No judicial review of lawfulness of detention", "size": 1},
+{"name": "Peaceful enjoyment of possessions", "size": 1},
+{"name": "Privacy and family life", "size": 1}
+	]
+ }
+]
+},
+{
+"name": "Estonia",
+	"children": [
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Absence of oral hearing", "size": 1},
+{"name": "Access to information", "size": 1},
+{"name": "Friendly settlement", "size": 1},
+{"name": "Ill treatment/torture by police", "size": 1},
+{"name": "Lack of access to a court", "size": 1}
+	]
+ }
+]
+},
+{
+"name": "Finland",
+	"children": [
+{"name": "New Case",
+ "children": [
+{"name": "Length of civil proceedings", "size": 1}
+	 ]
+  },
+{"name": "Standard Procedure", "children": [
+{"name": "Family life", "size": 5},
+{"name": "Freedom of expression", "size": 11},
+{"name": "Length of civil proceedings", "size": 7},
+{"name": "Length of criminal proceedings", "size": 4},
+{"name": "Privacy", "size": 4},
+{"name": "Right no to be tried or punished twice", "size": 6},
+{"name": "Right to be assisted by a lawyer", "size": 1},
+{"name": "Right to have adequate time and facilities for the preparation of one's defence", "size": 1},
+{"name": "Unfair criminal proceedings", "size": 1},
+{"name": "Unlawful deprivation of liberty", "size": 1}
+	]
+ }
+]
+},
+{
+"name": "France",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Privacy", "size": 4}
+	 ]
+  },
+{"name": "New Case", "children": [
+{"name": "Friendly settlement", "size": 1},
+{"name": "Privacy and sexual identity / preferences", "size": 1}
+	]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Arrest without judicial control", "size": 2},
+{"name": "Fairness of civil proceedings", "size": 1},
+{"name": "Family life", "size": 3},
+{"name": "Freedom of expression", "size": 6},
+{"name": "Friendly settlement", "size": 4},
+{"name": "Ill treatment/torture by police", "size": 1},
+{"name": "Ill treatment/torture on account of the conditions of expulsion or extradition", "size": 9},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 3},
+{"name": "Impartiality in civil proceedings", "size": 1},
+{"name": "Lack of access to a court", "size": 1},
+{"name": "Length of detention on remand", "size": 7},
+{"name": "Peaceful enjoyment of possessions", "size": 3},
+{"name": "Privacy", "size": 1},
+{"name": "Privacy and home", "size": 1},
+{"name": "Right to life", "size": 1},
+{"name": "Unlawful deprivation of liberty", "size": 6}
+	]
+ }
+]
+},
+{
+"name": "Georgia",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Discrimination", "size": 3},
+{"name": "Friendly settlement", "size": 10},
+{"name": "Ill treatment/torture", "size": 3},
+{"name": "Right to life", "size": 3}
+	 ]
+  },
+{"name": "New Case",
+ "children": [
+{"name": "Discrimination", "size": 1},
+{"name": "Fairness of civil proceedings", "size": 1},
+{"name": "Unfair disciplinary proceedings", "size": 1}
+	 ]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Failure to comply with interim measures ordered by the Court under Art.39", "size": 1},
+{"name": "Family life", "size": 2},
+{"name": "Friendly settlement", "size": 4},
+{"name": "Length of arrest without judicial control", "size": 1},
+{"name": "No judicial review of lawfulness of detention", "size": 1},
+{"name": "Non Execution", "size": 1},
+{"name": "Right to liberty & security", "size": 1}
+]
+ }
+]
+},
+{
+"name": "Germany",
+	"children": [
+{"name": "New Case",
+ "children": [
+{"name": "Discrimination", "size": 1}
+	 ]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Family life", "size": 2},
+{"name": "Freedom of expression", "size": 1},
+{"name": "Friendly settlement", "size": 2},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Lack of access to a court", "size": 1},
+{"name": "Lack of public hearing", "size": 1},
+{"name": "Length of detention on remand", "size": 1},
+{"name": "Presumption of innocence", "size": 2},
+{"name": "Privacy", "size": 1},
+{"name": "Right to be assisted by a lawyer", "size": 1},
+{"name": "Unfair criminal proceedings", "size": 1},
+{"name": "Unlawful deprivation of liberty", "size": 2}
+]
+ }
+]
+},
+{
+"name": "Greece",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Collective expulsions", "size": 2},
+{"name": "Discrimination", "size": 2},
+{"name": "Freedom of association", "size": 3},
+{"name": "Ill treatment/torture", "size": 34},
+{"name": "Ill treatment/torture by police", "size": 7},
+{"name": "Ill treatment/torture on account of the conditions of expulsion or extradition", "size": 8},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 7},
+{"name": "Lack of access to a court", "size": 2},
+{"name": "Length of civil proceedings", "size": 3},
+{"name": "Length of criminal proceedings", "size": 2},
+{"name": "Length of detention on remand", "size": 1},
+{"name": "Length of proceedings for the release from detention on remand", "size": 1},
+{"name": "No judicial review of lawfulness of detention", "size": 2},
+{"name": "Non Execution", "size": 21},
+{"name": "Right to life", "size": 5},
+{"name": "Unlawful deprivation of liberty", "size": 1}
+	 ]
+  },
+{"name": "New Case",
+ "children": [
+{"name": "Freedom of expression", "size": 2},
+{"name": "Friendly settlement", "size": 12},
+{"name": "Ill treatment/torture", "size": 5},
+{"name": "Ill treatment/torture on account of the conditions of expulsion or extradition", "size": 1},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Lack of access to a court", "size": 2},
+{"name": "Length of civil proceedings", "size": 7},
+{"name": "Non Execution", "size": 1},
+{"name": "Slavery", "size": 1}
+	 ]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Absence of judicial remedy", "size": 2},
+{"name": "Fairness of civil proceedings", "size": 1},
+{"name": "Fairness of proceedings for release of a prisoner", "size": 2},
+{"name": "Family life", "size": 2},
+{"name": "Freedom of expression", "size": 6},
+{"name": "Freedom of thought", "size": 1},
+{"name": "Friendly settlement", "size": 57},
+{"name": "Ill treatment/torture", "size": 4},
+{"name": "Ill treatment/torture on account of the conditions of expulsion or extradition", "size": 1},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Lack of access to a court", "size": 15},
+{"name": "Lack of legal aid in criminal proceedings", "size": 1},
+{"name": "Length of civil proceedings", "size": 26},
+{"name": "Length of criminal proceedings", "size": 5},
+{"name": "Length of proceedings before the court of audit", "size": 3},
+{"name": "Length of proceedings for the release from detention on remand", "size": 6},
+{"name": "No judicial review of lawfulness of detention", "size": 19},
+{"name": "Non Execution", "size": 2},
+{"name": "Peaceful enjoyment of possessions", "size": 6},
+{"name": "Presumption of innocence", "size": 5},
+{"name": "Right no to be tried or punished twice", "size": 1},
+{"name": "Right to be assisted by a lawyer", "size": 1},
+{"name": "Slavery", "size": 1},
+{"name": "Unfair criminal proceedings", "size": 2},
+{"name": "Unfair proceedings for the release from detention", "size": 2},
+{"name": "Unlawful deprivation of liberty", "size": 4}
+]
+ }
+]
+},
+{
+"name": "Hungary",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Discrimination", "size": 1},
+{"name": "Ill treatment/torture", "size": 2},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 15},
+{"name": "Lack of access to a court", "size": 1},
+{"name": "Length of civil proceedings", "size": 237},
+{"name": "Length of criminal proceedings", "size": 35},
+{"name": "Length of detention on remand", "size": 2},
+{"name": "Privacy", "size": 2}
+	 ]
+  },
+{"name": "New Case",
+ "children": [
+{"name": "Friendly settlement", "size": 21},
+{"name": "Length of civil proceedings", "size": 1},
+{"name": "Peaceful enjoyment of possessions", "size": 5},
+{"name": "Privacy", "size": 1}
+	 ]
+  },
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Access to information", "size": 1},
+{"name": "Discrimination", "size": 1},
+{"name": "Fairness of civil proceedings", "size": 1},
+{"name": "Family life", "size": 4},
+{"name": "Freedom of association", "size": 1},
+{"name": "Freedom of expression", "size": 16},
+{"name": "Freedom of peaceful assembly", "size": 5},
+{"name": "Friendly settlement", "size": 53},
+{"name": "Ill treatment/torture by police", "size": 4},
+{"name": "Impartiality in civil proceedings", "size": 1},
+{"name": "Lack of access to a court", "size": 1},
+{"name": "Lack of public hearing", "size": 4},
+{"name": "Length of civil proceedings", "size": 3},
+{"name": "Length of criminal proceedings", "size": 2},
+{"name": "Length of detention on remand", "size": 9},
+{"name": "No compensation for unlawful detention", "size": 1},
+{"name": "Peaceful enjoyment of possessions", "size": 19},
+{"name": "Privacy", "size": 2},
+{"name": "Privacy and home", "size": 1},
+{"name": "Right to free elections", "size": 3},
+{"name": "Right to liberty & security", "size": 1},
+{"name": "Right to life", "size": 2},
+{"name": "Unlawful deprivation of liberty", "size": 6}
+]
+ }
+]
+},
+{
+"name": "Iceland",
+	"children": [
+{"name": "New Case",
+ "children": [
+{"name": "Freedom of expression", "size": 2}
+	 ]
+  },
+{"name": "Standard Procedure", "children": [
+{"name": "Lack of public hearing", "size": 1}
+]
+ }
+]
+},
+{"name": "Ireland",
+	 "children": [
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Effective remedy", "size": 3},
+{"name": "Ill treatment/torture", "size": 1},
+{"name": "Length of civil proceedings", "size": 1}
+	]
+ }
+]
+},
+{
+ "name": "Italy",
+ "children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Cases concerning contamination through blood transfusion", "size": 1},
+{"name": "Collective expulsions", "size": 2},
+{"name": "Effective remedy", "size": 1},
+{"name": "Fairness of civil proceedings", "size": 11},
+{"name": "Freedom of movement", "size": 6},
+{"name": "Friendly settlement", "size": 2},
+{"name": "Ill treatment/torture", "size": 7},
+{"name": "Lack of access to a court", "size": 3},
+{"name": "Length of civil proceedings", "size": 1924},
+{"name": "Length of criminal proceedings", "size": 144},
+{"name": "No judicial review of lawfulness of detention", "size": 1},
+{"name": "Peaceful enjoyment of possessions", "size": 2},
+{"name": "Right to liberty & security", "size": 1}
+]
+},
+{"name": "New Case",
+ "children": [
+{"name": "Family life", "size": 2},
+{"name": "Length of criminal proceedings", "size": 1},
+{"name": "Peaceful enjoyment of possessions", "size": 1}
+	 ]
+},
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Discrimination", "size": 2},
+{"name": "Effective remedy", "size": 1},
+{"name": "Fairness of civil proceedings", "size": 11},
+{"name": "Family life", "size": 10},
+{"name": "Freedom of expression", "size": 2},
+{"name": "Freedom of movement", "size": 1},
+{"name": "Friendly settlement", "size": 38},
+{"name": "Ill treatment/torture", "size": 3},
+{"name": "Independence and impartiality in civil proceedings", "size": 1},
+{"name": "Lack of access to a court", "size": 2},
+{"name": "Length of civil proceedings", "size": 2},
+{"name": "No punishment without law", "size": 3},
+{"name": "Non Execution", "size": 1},
+{"name": "Peaceful enjoyment of possessions", "size": 22},
+{"name": "Privacy", "size": 1},
+{"name": "Privacy and family life", "size": 1},
+{"name": "Right no to be tried or punished twice", "size": 1},
+{"name": "Right to liberty & security", "size": 3},
+{"name": "Right to life", "size": 2},
+{"name": "Unfair criminal proceedings", "size": 3}
+]
+ }
+]
+},
+{
+"name": "Latvia",
+	"children": [
+{"name": "New Case",
+ "children": [
+{"name": "Length of civil proceedings", "size": 2},
+{"name": "Peaceful enjoyment of possessions", "size": 1},
+{"name": "Privacy", "size": 1}
+	]
+},
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Effective remedy", "size": 1},
+{"name": "Freedom of expression", "size": 1},
+{"name": "Friendly settlement", "size": 1},
+{"name": "Ill treatment/torture", "size": 11},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Lack of public hearing", "size": 2},
+{"name": "Length of civil proceedings", "size": 2},
+{"name": "Length of criminal proceedings", "size": 1},
+{"name": "No judicial review of lawfulness of detention", "size": 1},
+{"name": "Privacy", "size": 1},
+{"name": "Procedural safeguards relating to expulsion of aliens", "size": 1},
+{"name": "Right to liberty & security", "size": 2},
+{"name": "Right to life", "size": 2},
+{"name": "Unfair criminal proceedings", "size": 1},
+{"name": "Unlawful deprivation of liberty", "size": 3}
+	]
+ }
+]
+},
+{
+"name": "Liechtenstein",
+	"children": [
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Length of civil proceedings", "size": 2}
+	]
+ }
+]
+},
+{
+"name": "Lithuania",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "No punishment without law", "size": 1},
+{"name": "Privacy and sexual identity / preferences", "size": 1},
+{"name": "Right to free elections", "size": 1}
+]
+},
+{"name": "New Case",
+ "children": [
+{"name": "Access to information", "size": 1},
+{"name": "Fairness of civil proceedings", "size": 1},
+{"name": "Friendly settlement", "size": 1},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Length of detention on remand", "size": 1}
+	]
+},
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Fairness of civil proceedings", "size": 1},
+{"name": "Family life", "size": 1},
+{"name": "Ill treatment/torture", "size": 2},
+{"name": "Ill treatment/torture by police", "size": 2},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 1},
+{"name": "Lack of access to a court", "size": 3},
+{"name": "Lack of legal aid in criminal proceedings", "size": 1},
+{"name": "No judicial review of lawfulness of detention", "size": 1},
+{"name": "Non Execution", "size": 2},
+{"name": "Peaceful enjoyment of possessions", "size": 6},
+{"name": "Right to life", "size": 3},
+{"name": "Unfair administrative proceedings", "size": 1}
+	]
+ }
+]
+},
+{
+"name": "Luxembourg",
+	"children": [
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Right to be assisted by a lawyer", "size": 1}
+	]
+ }
+]
+},
+{
+"name": "Malta",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Peaceful enjoyment of possessions", "size": 2}
+	 ]
+},
+{"name": "New Case",
+ "children": [
+{"name": "Fairness of civil proceedings", "size": 1},
+{"name": "Friendly settlement", "size": 1}
+	 ]
+},
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Discrimination", "size": 1},
+{"name": "Length of proceedings for the release from detention on remand", "size": 1},
+{"name": "No judicial review of lawfulness of detention", "size": 1},
+{"name": "Peaceful enjoyment of possessions", "size": 6},
+{"name": "Right to be assisted by a lawyer", "size": 1},
+{"name": "Unfair proceedings for the release from detention", "size": 1}
+]
+ }
+]
+},
+{
+"name": "Montenegro",
+	"children": [
+{"name": "New Case",
+ "children": [
+{"name": "Friendly settlement", "size": 3},
+{"name": "Length of civil proceedings", "size": 4},
+{"name": "Non Execution", "size": 1}
+	 ]
+},
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Friendly settlement", "size": 1},
+{"name": "Ill treatment/torture", "size": 1},
+{"name": "Lack of access to a court", "size": 1}
+	]
+ }
+]
+},
+{
+"name": "Netherlands",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Right to life", "size": 1}
+	 ]
+},
+{"name": "New Case", "children": [
+{"name": "Friendly settlement", "size": 1}
+]
+},
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Freedom of expression", "size": 2},
+{"name": "Friendly settlement", "size": 2},
+{"name": "Ill treatment/torture", "size": 1},
+{"name": "Length of proceedings for the release of a prisoner", "size": 1},
+{"name": "Unfair administrative proceedings", "size": 1},
+{"name": "Unfair criminal proceedings", "size": 1},
+{"name": "Unlawful deprivation of liberty", "size": 1}
+	]
+ }
+]
+},
+{
+"name": "Poland",
+	"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Family life", "size": 1},
+{"name": "Length of civil proceedings", "size": 118},
+{"name": "Length of criminal proceedings", "size": 29},
+{"name": "Length of detention on remand", "size": 6},
+{"name": "No judicial review of lawfulness of detention", "size": 2},
+{"name": "Right to liberty & security", "size": 2},
+{"name": "Right to life", "size": 1},
+{"name": "Unlawful deprivation of liberty", "size": 1}
+	 ]
+},
+{"name": "New Case",
+ "children": [
+{"name": "Effective remedy", "size": 1},
+{"name": "Freedom of expression", "size": 1},
+{"name": "Friendly settlement", "size": 5},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 2},
+{"name": "Impartiality in civil proceedings", "size": 1},
+{"name": "Length of civil proceedings", "size": 1},
+{"name": "Length of detention on remand", "size": 1},
+{"name": "Privacy and family life", "size": 1}
+	]
+},
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Family life", "size": 4},
+{"name": "Freedom of expression", "size": 8},
+{"name": "Friendly settlement", "size": 30},
+{"name": "Ill treatment/torture", "size": 2},
+{"name": "Ill treatment/torture on acount of the conditions of detention", "size": 3},
+{"name": "Independence and impartiality in criminal proceedings", "size": 1},
+{"name": "Length of civil proceedings", "size": 2},
+{"name": "Length of detention on remand", "size": 2},
+{"name": "Peaceful enjoyment of possessions", "size": 3},
+{"name": "Privacy", "size": 3},
+{"name": "Privacy and family life", "size": 1},
+{"name": "Right to marry", "size": 1},
+{"name": "Violation of property rights resulting from non-execution of judgments", "size": 1}
+]
+ }
+]
+},
+{
+"name": "Portugal",
+"children": [
+{"name": "Enhanced Procedure",
+ "children": [
+{"name": "Length of civil proceedings", "size": 11}
+	 ]
+},
+{"name": "New Case",
+ "children": [
+{"name": "Freedom of expression", "size": 1},
+{"name": "Friendly settlement", "size": 6},
+{"name": "Length of civil proceedings", "size": 1},
+{"name": "Length of proceedings for the release from detention on remand", "size": 1}
+	 ]
+},
+{"name": "Standard Procedure",
+ "children": [
+{"name": "Family life", "size": 1},
+{"name": "Freedom of expression", "size": 2},
+{"name": "Friendly settlement", "size": 4},
+{"name": "Independence and impartiality in court proceedings", "size": 1},
+{"name": "Lack of access to a court", "size": 1},
+{"name": "Length of civil proceedings", "size": 4},
+{"name": "Non Execution", "size": 2},
+{"name": "Peaceful enjoyment of possessions", "size": 1},
+{"name": "Presumption of innocence", "size": 1},
+{"name": "Unfair criminal proceedings", "size": 1},
+{"name": "Unfair disciplinary proceedings", "size": 1}
+	]
+ }
+]
+}]}// JSON Document
