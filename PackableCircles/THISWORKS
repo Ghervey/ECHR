@@ -7,7 +7,8 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="1404.47">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #31a354; -webkit-text-stroke: #31a354}
+hr {display: block; height: 2px; border: 0; border-top: 2px solid #000000; margin: 1em 0; padding: 0;}
+  p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #31a354; -webkit-text-stroke: #31a354}
     p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #3182bd; -webkit-text-stroke: #3182bd}
     p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #000000; -webkit-text-stroke: #000000}
     p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #756bb1; -webkit-text-stroke: #756bb1}
@@ -33,7 +34,7 @@
 .label {
   font: 13px "Guardian Sans", Helvetica, Arial, sans-serif;
   text-anchor: middle;
-  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+  text-shadow: 0 .5px 0 #fff, .5px 0 0 #fff, -.5px 0 0 #fff, 0 -.5px 0 #fff;
 }
 .label,
 .node--root,
@@ -45,30 +46,24 @@
   <meta charset="utf-8">
 </head>
 <body>
-<svg width="750" height="960">
-	<text x="10" y="20" font-family="Guardian Sans" font-weight="bold" font-size="24px" fill="black">NON-IMPLEMENTED JUDGMENTS OF THE ECHR</text>
-	<text x="10" y="45" font-family="Guardian Sans" font-size="18px" fill="black">Click on any circle to see a breakdown of violations in that country.</text>
-	<text x="10" y="850" font-family="Guardian Sans" font-weight="bold" font-size="14px" fill="black">SOURCE:</text>
-		<text x="70" y="850" font-family="Guardian Sans" font-size="14px" fill="black">Department for the Execution of Judgments of the ECHR website</text>
-		<text x="10" y="870" font-family="Guardian Sans" font-weight="bold" font-size="14px" fill="black">METHODOLOGY NOTE:</text>
-	<text x="160" y="870" font-family="Guardian Sans" font-size="14px" fill="black">In order to examine the cases pending in each country in more detail, this visualization is based on a</text> 
-		<text x="10" y="890" font-family="Guardian Sans" font-size="14px" fill="black">documentary database and not a precise statistical count of pending judgments. It's possible that some figures aren't precise; 
-	</text> 
-	<text x="10" y="910" font-family="Guardian Sans" font-size="14px" fill="black">however the documentary data matches or is very close to the precise statistics in all cases where it was possible to check.</text>
+	<hr />
+	<p style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:24px;color:black"><b>NON-IMPLEMENTED JUDGMENTS OF THE ECHR</b></p>
+	<p class="subhead" style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:18px;color:black">Click on any circle to see a breakdown of violations in that country.</p>
+<svg width="655" height="655">
 </svg>
 <script>
 	var svg = d3.select("svg"),
     margin = 20,
     diameter = +svg.attr("width"),
-    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + (diameter / 2 + 65) + ")");
+    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 var color = d3.scaleLinear()
     .domain([-1, 2])
-    .range(["hsl(0,0%,100%)", "hsl(180,100%,20%)"])
+    .range(["hsl(240,20%,98%)", "hsl(202, 92%, 21%)"])
     .interpolate(d3.interpolateHcl);
 var pack = d3.pack()
     .size([diameter - margin, diameter - margin])
     .padding(2);
-d3.json("https://raw.githubusercontent.com/Ghervey/ECHR/master/PackableCircles.json", function(error, root) {
+d3.json("https://raw.githubusercontent.com/Ghervey/ECHR/master/PackableCirclesConsolidatedViolations_2.json", function(error, root) {
   if (error) throw error;
   root = d3.hierarchy(root)
       .sum(function(d) { return d.size; })
@@ -114,5 +109,10 @@ d3.json("https://raw.githubusercontent.com/Ghervey/ECHR/master/PackableCircles.j
   }	
 });
 </script>
+	<p style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:14px;color:black"><b>SOURCE:</b> Department for the Execution of Judgments of the ECHR website<br>
+	<b>METHODOLOGY NOTE:</b> In order to examine the cases pending in each country in more detail, this visualization is based on a documentary database and not a precise statistical count of pending judgments. It's possible that some figures aren't precise; however the documentary data matches or is very close to the precise statistics in all cases where it was possible to check.
+	To avoid duplicates, cases with multiple violations were only counted as the first violation listed.
+	</p>
+	<hr />
 </body>
 </html>
