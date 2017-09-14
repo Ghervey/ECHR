@@ -33,8 +33,10 @@ hr {display: block; height: 2px; border: 0; border-top: 2px solid #000000; margi
 }
 .label {
   font: 13px "Guardian Sans", Helvetica, Arial, sans-serif;
+  font-size: 13px;
   text-anchor: middle;
-  text-shadow: 0 .5px 0 #fff, .5px 0 0 #fff, -.5px 0 0 #fff, 0 -.5px 0 #fff;
+  alignment-baseline: auto;
+  text-shadow: 0 .5px 0 #fff, 0 .5px 0 #fff, 0 -.px 0 #fff, 0 -.5px 0 #fff;
 }
 .label,
 .node--root,
@@ -48,17 +50,25 @@ hr {display: block; height: 2px; border: 0; border-top: 2px solid #000000; margi
 <body>
 	<hr />
 	<p style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:24px;color:black"><b>NON-IMPLEMENTED JUDGMENTS OF THE ECHR</b></p>
-	<p class="subhead" style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:18px;color:black">Click on any circle to see a breakdown of violations in that country.</p>
+	<p class="subhead" style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:18px;color:black">Click on any circle to see a breakdown of human rights violations that have not been remedied in each country.</p>
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="left"><img src="http://www.politico.eu/wp-content/uploads/2017/09/ECHR_scaleKey-01-01.png" width="655"></td>
+</tr>
+</tbody>
+</table>
 <svg width="655" height="655">
 </svg>
 <script>
 	var svg = d3.select("svg"),
     margin = 20,
     diameter = +svg.attr("width"),
-    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")"),
+    format = d3.format(",d");
 var color = d3.scaleLinear()
     .domain([-1, 2])
-    .range(["hsl(240,20%,98%)", "hsl(202, 92%, 21%)"])
+    .range(["hsl(240,20%,98%)", "hsl(202,42%,51%)"])
     .interpolate(d3.interpolateHcl);
 var pack = d3.pack()
     .size([diameter - margin, diameter - margin])
@@ -68,7 +78,8 @@ d3.json("https://raw.githubusercontent.com/Ghervey/ECHR/master/PackableCirclesCo
   root = d3.hierarchy(root)
       .sum(function(d) { return d.size; })
       .sort(function(a, b) { return b.value - a.value; });
-  var focus = root,
+  
+	var focus = root,
       nodes = pack(root).descendants(),
       view;
   var circle = g.selectAll("circle")
@@ -77,13 +88,31 @@ d3.json("https://raw.githubusercontent.com/Ghervey/ECHR/master/PackableCirclesCo
       .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
       .style("fill", function(d) { return d.children ? color(d.depth) : null; })
       .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+
   var text = g.selectAll("text")
     .data(nodes)
     .enter().append("text")
-      .attr("class", "label")     .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
+      .attr("class", "label").style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
       .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
-      .text(function(d) { return d.data.name; });
+	  /*Makes label font size vary according to circle size -> */
+      .style("font-size", function(d) {
+							if (d.value < 10) {return "12px"}
+							else if (d.value >= 1000) {return "20px"}
+							else if (d.value >= 600) {return "19px"}
+							else if (d.value >= 350) {return "18px"}
+							else if (d.value >= 200) {return "17px"}
+							else if (d.value >= 120) {return "16px"}
+							else if (d.value >= 70) {return "15px"}
+							else if (d.value >= 30) {return "14px"}
+							else {return "12px"}
+							; })
+	  /* <- Makes label font size vary according to circle size*/
+      .text(function(d) { return d.data.name/*Adds value in circle  -> */ + " (" + format(d.value) + ")"/* <- Adds value in circle*/; });
   var node = g.selectAll("circle,text");
+	  /* Adds value as tooltip ->*/
+  node.append("title")
+      .text(function(d) { return d.data.name + ": " + d.value; });
+	  /* <- Adds value as tooltip*/
   svg
       .style("background", color(-1))
       .on("click", function() { zoom(root); });
@@ -106,7 +135,7 @@ d3.json("https://raw.githubusercontent.com/Ghervey/ECHR/master/PackableCirclesCo
     var k = diameter / v[2]; view = v;
     node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
     circle.attr("r", function(d) { return d.r * k; });
-  }	
+  }
 });
 </script>
 	<p style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:14px;color:black"><b>SOURCE:</b> Department for the Execution of Judgments of the ECHR website<br>
