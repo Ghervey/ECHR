@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.47">
+  <style type="text/css">
+hr {display: block; height: 2px; border: 0; border-top: 2px solid #000000; margin: 1em 0; padding: 0;}
+  p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #31a354; -webkit-text-stroke: #31a354}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #3182bd; -webkit-text-stroke: #3182bd}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #756bb1; -webkit-text-stroke: #756bb1}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Menlo; color: #e6550d; -webkit-text-stroke: #e6550d}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; color: #e6550d; -webkit-text-stroke: 0px #e6550d}
+    span.s3 {font-kerning: none; color: #756bb1; -webkit-text-stroke: 0px #756bb1}
+    span.s4 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s5 {font-kerning: none; color: #3182bd; -webkit-text-stroke: 0px #3182bd}
+    span.s6 {font-kerning: none; color: #31a354; -webkit-text-stroke: 0px #31a354}
+  </style>
+  <style>
+.node {
+  cursor: pointer;
+}
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+.node--leaf {
+  fill: white;
+}
+.label {
+  font: 13px "Guardian Sans", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 .5px 0 #fff, .5px 0 0 #fff, -.5px 0 0 #fff, 0 -.5px 0 #fff;
+}
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+  </style>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <meta charset="utf-8">
+</head>
+<body>
+	<hr />
+	<p style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:24px;color:black"><b>NON-IMPLEMENTED JUDGMENTS OF THE ECHR</b></p>
+	<p class="subhead" style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:18px;color:black">Click on any circle to see a breakdown of violations in that country.</p>
+<svg width="655" height="655" style="background: rgb(163, 245, 207) non repeat scroll 0% 0%">
+</svg>
+<script>
+	var svg = d3.select("svg"),
+    margin = 20,
+    diameter = +svg.attr("width"),
+    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+var color = d3.scaleLinear()
+    .domain([-1, 2])
+    .range(["hsl(240,20%,98%)", "hsl(202, 92%, 21%)"])
+    .interpolate(d3.interpolateHcl);
+var pack = d3.pack()
+    .size([diameter - margin, diameter - margin])
+    .padding(2);
+d3.json("https://raw.githubusercontent.com/Ghervey/ECHR/master/PackableCirclesConsolidatedViolations_2.json", function(error, root) {
+  if (error) throw error;
+  root = d3.hierarchy(root)
+      .sum(function(d) { return d.size; })
+      .sort(function(a, b) { return b.value - a.value; });
+  var focus = root,
+      nodes = pack(root).descendants(),
+      view;
+  var circle = g.selectAll("circle")
+    .data(nodes)
+    .enter().append("circle")
+      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
+      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+  var text = g.selectAll("text")
+    .data(nodes)
+    .enter().append("text")
+      .attr("class", "label")     .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
+      .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
+      .text(function(d) { return d.data.name; });
+  var node = g.selectAll("circle,text");
+  svg
+      .style("background", color(-1))
+      .on("click", function() { zoom(root); });
+  zoomTo([root.x, root.y, root.r * 2 + margin]);
+  function zoom(d) {
+    var focus0 = focus; focus = d;
+    var transition = d3.transition()
+        .duration(d3.event.altKey ? 7500 : 750)
+        .tween("zoom", function(d) {
+          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
+          return function(t) { zoomTo(i(t)); };
+        });
+    transition.selectAll("text")
+      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+        .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
+        .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
+        .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+  }
+  function zoomTo(v) {
+    var k = diameter / v[2]; view = v;
+    node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
+    circle.attr("r", function(d) { return d.r * k; });
+  }	
+});
+</script>
+	<p style="font-family:'Guardian Sans Light', 'Guardian Sans Medium', 'Guardian Sans Semibold', 'Guardian Sans';font-size:14px;color:black"><b>SOURCE:</b> Department for the Execution of Judgments of the ECHR website<br>
+	<b>METHODOLOGY NOTE:</b> In order to examine the cases pending in each country in more detail, this visualization is based on a documentary database and not a precise statistical count of pending judgments. It's possible that some figures aren't precise; however the documentary data matches or is very close to the precise statistics in all cases where it was possible to check.
+	To avoid duplicates, cases with multiple violations were only counted as the first violation listed.
+	</p>
+	<hr />
+</body>
+</html>
